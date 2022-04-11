@@ -19,4 +19,6 @@ async def echo_send(message: types.Message):
     await bot.copy_message(message.chat.id, message.chat.id, message.message_id)
 
 
-executor.start_polling(dp, skip_updates=True)
+if __name__ == '__main__':
+
+    executor.start_polling(dp, skip_updates=True)
